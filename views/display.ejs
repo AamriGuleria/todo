@@ -1,0 +1,13 @@
+<%-  include("header")-%>
+<h2 class="fill">My Todos</h2>
+<div class="todo-container">
+<% for(let data of model){ %>
+    <div class="todos">
+    <h4 class="todo-title"> <%= data.Title %> </h4>
+    <p class="todo-text"> <%= data.Todo %> </p>
+    <a href="/edit/<%= data.Id %>" name="edit" id="edit">Edit</a>
+    <a href="/delete/<%= data.Id %>" name="delete" id="delete">Delete</a>
+    </div>
+<% } %>
+</div>
+<%-  include("footer")-%>

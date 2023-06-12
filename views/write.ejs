@@ -1,0 +1,14 @@
+<%- include("header") -%>
+<center>
+    <div class="hello">
+    <h1>Enter Todo</h1>
+    <form action="/write" method="post">
+        <label for="text"><b>Title</b></label>
+        <input type="text" id="text"  name="title"/>
+        <label for="content"><b>Description</b></label>
+        <textarea rows="10" columns="30" name="desc" id="content"></textarea>
+        <button type="submit" class="submit">Publish</button>
+    </form>
+    </div>
+</center>
+    <%- include("footer") -%>

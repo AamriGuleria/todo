@@ -1,0 +1,12 @@
+<%- include("header") -%>
+<center>
+    <h1>Edit Todo</h1>
+    <form action=/edit/<%= model.Id %> method="post">
+        <label for="text"><b>Title</b></label>
+        <input type="text" id="text"  name="title" value= <%= model.Title %> />
+        <label for="content"><b>Description</b></label>
+        <textarea rows="10" columns="30" name="desc" id="content" ><%= model.Todo %></textarea>
+        <button type="submit" class="submit">Publish</button>
+    </form>
+</center>
+    <%- include("footer") -%>

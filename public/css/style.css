@@ -1,0 +1,152 @@
+body{
+    text-align: center;
+}
+*{
+    margin:0;
+    box-sizing:border-box;
+}
+.collect{
+    background-color: rgb(222, 171, 181);
+}
+.nav-home{
+    color:black;
+    text-decoration:none;
+    list-style: none;
+    text-decoration: none;
+}
+.nav-about{
+    color:black;
+    text-decoration:none;
+    list-style: none;
+    text-decoration: none;
+}
+.nav-contact{
+    color:black;
+    text-decoration:none;
+    list-style: none;
+    text-decoration: none;
+}
+.main-home{
+    overflow:hidden;
+    object-fit: cover;
+    height:93vh;
+}
+nav{
+    padding:14px;
+    height:50px;
+    vertical-align: middle;
+    background-color: rgb(253, 249, 250);
+    display:inline-flex;
+    justify-content: space-between;
+    width:100%;
+    top:0;
+}
+ul{
+    float:right;
+    display:inline-flex;
+    gap:26px;
+    align-items:first baseline;
+    list-style-type: none;
+    color:black;
+    text-decoration: none;
+}
+.footer{
+    position: fixed;
+    width:100%;
+    bottom:0;
+    height:40px;
+    vertical-align:middle;
+    background-color: rgb(125, 231, 221);
+}
+form{
+    display: grid;
+    grid-template-rows: repeat(1fr,5px);
+    grid-gap:5px;
+    max-width:700px;
+    margin:10px;
+    padding:20px;
+}
+.submit{
+    border:none;
+    background-color: rgb(104, 104, 252);
+    border-radius:5px;
+    width:60px;
+    padding:7px;
+
+}
+.submit:hover{
+    border:none;
+    background-color: rgb(130, 130, 247);
+    border-radius:5px;
+    width:60px;
+    padding:7px;
+
+}
+label{
+    text-align: left;
+}
+.post-content{
+    text-align: center;
+    max-width:1000px ;
+    overflow-wrap: break-word;
+}
+.specific-post{
+    text-align: center;
+    max-width:1000px ;
+    overflow-wrap: break-word;
+}
+.todos{
+    margin-top:50px;
+    margin-bottom:50px;
+    background-color: rgb(254, 217, 175);
+    padding:10px;
+    border: 3px solid rgb(243, 238, 175);
+    border-radius:40px;
+    max-width:500px;
+    margin-left:10px;
+    margin-right:10px;
+    color:black;
+}
+#edit{
+    text-decoration: none;
+    color:black;
+    font-size: 15px;
+    font-weight: 600;
+    padding:2px;
+    margin:4px;
+    border-radius:5px;
+    background-color: rgb(121, 218, 121);
+}
+#delete{
+    text-decoration: none;
+    color:black;
+    font-size: 15px;
+    font-weight: 600;
+    padding:2px;
+    margin:4px;
+    border-radius:5px;
+    background-color: rgb(223, 128, 128);
+}
+.todo-container{
+    padding-left: 239px;
+    padding-right: 239px;
+    align-items: center;
+    display: flex;
+    flex-flow:wrap;
+    background-image:url("/back-back.avif");
+    background-size: contain;
+    position: relative;
+}
+.main-head{
+    margin:30px;
+    font-size:30px;
+}
+.fill{
+    background-color: rgb(250, 212, 226);
+}
+.hello{
+    background-image: url("/enter.webp");
+    background-repeat: no-repeat;
+    height: 90vh;
+    background-size: 500px 700px;
+}
