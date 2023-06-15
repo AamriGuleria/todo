@@ -175,3 +175,8 @@ background-color:  rgb(250, 232, 226);
 .imageee{
     margin-top:200px;
 }
+@media(max-height:700px){
+    .imageee{
+        display:none;
+    }
+}
