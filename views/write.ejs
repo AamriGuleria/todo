@@ -1,14 +1,23 @@
 <%- include("header") -%>
 <center>
     <div class="hello">
+        <div class="imageee1">
+            <img src="/cloud.gif" height="200px" width="300px"/>
+        </div>
+    <div class="form">
     <h1>Enter Todo</h1>
     <form action="/write" method="post">
+        
         <label for="text"><b>Title</b></label>
         <input type="text" id="text"  name="title"/>
         <label for="content"><b>Description</b></label>
         <textarea rows="10" columns="30" name="desc" id="content"></textarea>
-        <button type="submit" class="submit">Publish</button>
+        <button type="submit" class="submit">Submit</button>
     </form>
+    </div>
+    <div class="imageee">
+        <img src="/cloud.gif" height="200px" width="300px"/>
+    </div>
     </div>
 </center>
     <%- include("footer") -%>
