@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Merriweather:ital,wght@1,300&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@500&family=Raleway:ital,wght@1,100&display=swap');
 body{
     text-align: center;
+    height:100%;
+    font-family: 'Merriweather', serif;
+
 }
 *{
     margin:0;
@@ -8,6 +12,17 @@ body{
 .collect{
     background-color: rgb(222, 171, 181);
 }
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-image:  linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 50px #3c5bf7;
+  }
 .nav-home{
     color:black;
     text-decoration:none;
@@ -27,9 +42,22 @@ body{
     text-decoration: none;
 }
 .main-home{
-    overflow:hidden;
-    object-fit: cover;
-    height:93vh;
+    background-image: linear-gradient(to right, #fc5c7d, #6a82fb);
+    position: fixed;
+    top:50px;
+    left: 0;
+    width:100%;
+    height:100%;
+    overflow: scroll;
+    align-items:center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.main-home h4{
+    overflow-wrap: break-word;
+    max-width:300px;
 }
 nav{
     padding:14px;
@@ -55,7 +83,7 @@ ul{
     width:100%;
     bottom:0;
     height:40px;
-    vertical-align:middle;
+    align-items: center;
     background-color: rgb(125, 231, 221);
 }
 form{
@@ -112,24 +140,31 @@ label{
     color:black;
     font-size: 15px;
     font-weight: 600;
-    padding:2px;
+    padding:8px;
     margin:4px;
     border-radius:5px;
-    background-color: rgb(121, 218, 121);
+    background-image: linear-gradient(to right, #5a3f37, #2c7744);
+}
+#edit:hover{
+    opacity: 0.8;
+}
+#delete:hover{
+    opacity:0.8;
+}
+.buttons{
+    margin:10px;
 }
 #delete{
     text-decoration: none;
     color:black;
     font-size: 15px;
     font-weight: 600;
-    padding:2px;
-    margin:4px;
+    padding:8px;
     border-radius:5px;
-    background-color: rgb(223, 128, 128);
+    background-image: linear-gradient(25deg,#d64c7f,#ee4758 50%);
 }
 .todo-container{
-    padding-left: 239px;
-    padding-right: 239px;
+    justify-content: center;
     align-items: center;
     display: flex;
     flex-flow:wrap;
@@ -138,7 +173,6 @@ label{
     position: relative;
 }
 .main-head{
-    margin:30px;
     font-size:30px;
 }
 .fill{
@@ -160,23 +194,51 @@ background-color:  rgb(250, 232, 226);
     background-color: rgb(250, 232, 226);
 }
 .hello{
-    display:inline-flex;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom:50px;
 }
-.imageee{
-    margin-top:50px;
-    
+.great{
+    display:flex;
+    flex-direction: row;
 }
 .form{
     margin-top:50px;
-}
-.imageee1{
-    margin-top:0px;
 }
 .imageee{
     margin-top:200px;
 }
 @media(max-height:700px){
+    .main-home{
+        padding-top:50px;
+        padding-bottom:50px;
+    }
+    .hello{
+        flex-wrap: wrap;
+        padding:20px;
+        display:flex;
+        flex-direction: column;
+    }
     .imageee{
-        display:none;
+        margin-top:0;
+        margin-bottom:50px;
+    }
+}
+@media(max-height:740px){
+    .main-home{
+        padding-top:50px;
+        padding-bottom:50px;
+    }
+    .hello{
+        flex-wrap: wrap;
+        padding:20px;
+        display:flex;
+        flex-direction: column;
+    }
+    .imageee{
+        margin-top:0;
+        margin-bottom:50px
     }
 }
