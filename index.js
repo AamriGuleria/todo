@@ -44,6 +44,7 @@ app.get("/delete/:id",(req,res)=>{
     })
 })
  app.post("/write",(req,res)=>{
+    if(req.body.title!=="" && req.body.desc!==""){
     const query="INSERT INTO Todo (Title,Todo) Values (?,?)";
     const entry=[req.body.title,req.body.desc]
     db.run(query,entry,(err)=>{
@@ -51,6 +52,7 @@ app.get("/delete/:id",(req,res)=>{
             return console.log(err)
         }
     })
+}
     res.redirect("/display")
  })
 app.get("/edit/:id",(req,res)=>{
@@ -85,3 +87,9 @@ app.get("")
 app.listen(4000,()=>{
     console.log("app running on 3000 port")
 })
+{/* <form action="/write" method="get" class="form2">
+<input type="text" name="n" class="name" placeholder="Person ID..."></input>
+<center>
+<button type="submit" class="button">Submit</button>
+</center>
+</form> */}

@@ -5,12 +5,34 @@ body{
     font-family: 'Merriweather', serif;
 
 }
+.button{
+    height:30px;
+    width:60px;
+    font-size:15px;
+    border:none;
+    border-radius:6px;
+    background-image:  linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));;
+}
+.form2{
+    margin:20px;
+}
 *{
     margin:0;
     box-sizing:border-box;
 }
 .collect{
     background-color: rgb(222, 171, 181);
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.name{
+    height:40px;
+    width:300px;
+    border-radius:10px;
+    background-color: #e5adb2;
+    border:2px solid #e06f78;
 }
 ::-webkit-scrollbar {
     width: 8px;
@@ -91,7 +113,6 @@ form{
     grid-template-rows: repeat(1fr,5px);
     grid-gap:5px;
     max-width:700px;
-    margin:10px;
     padding:20px;
 }
 .submit{
@@ -210,6 +231,7 @@ background-color:  rgb(250, 232, 226);
 .imageee{
     margin-top:200px;
 }
+
 @media(max-height:700px){
     .main-home{
         padding-top:50px;
@@ -225,6 +247,28 @@ background-color:  rgb(250, 232, 226);
         margin-top:0;
         margin-bottom:50px;
     }
+}
+@media(max-width:400px){
+    .content{
+        width:300px;
+    }
+    
+}
+@media(max-width:300px){
+    .content{
+        width:250px;
+    }
+    .collect{
+        font-size: 10px;
+        width:max-content;
+    }
+    .imageee{
+        width:50px;
+    }
+    .imageee1{
+        width:50px;
+    }
+    
 }
 @media(max-height:740px){
     .main-home{
